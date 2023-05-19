@@ -1,0 +1,34 @@
+name = myDNSzone
+name = aniket
+ip = 10.1.1.1
+add dns from roles and features 
+then open from tools
+go to forward lookup and create new zone and then select add host
+go to backward lookup and create new zone and then select PTR
+then launch nslookup from action
+
+Active directory certification services : 
+add from roles and features, then complete configuration : 
+roles services : certification services
+setup type : standalone ca
+ca type : root ca
+private key : create a new private key
+cryptography : next
+ca name : next
+validity period : next
+next next done
+
+DHCP
+add from roles and features, then complete configuration
+open from tools
+select ipv4
+add a scope (in ip config, ip - 192.168.116.129)
+name - dhcp scope, description - this is scope for dhcp
+ip address range : start - 10.0.0.1, end - 10.255.255.254, lenght - 8, subnet - 255.0.0.0
+add start ip - 10.0.0.1 enter and another start ip - 10.1.1.1
+lease duration - 8 days 
+router(default gateway) - 10.0.0.1 
+parent domain - google.com, ip address - 192.168.116.2
+go to server options in ipv4 and click configure options
+select 004, ip address - 10.0.0.1, add it and apply
+now open cmd and write nsloopup
