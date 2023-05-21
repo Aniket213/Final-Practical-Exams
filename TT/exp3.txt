@@ -1,0 +1,95 @@
+Start the program.
+Include the necessary headers: iostream, string, and list.
+Define the function isPalindrome that takes a string parameter str and returns a boolean value.
+Initialize start to 0 and end to the length of str minus 1.
+While start is less than end, do the following:
+Check if the character at index start in str is not equal to the character at index end in str.
+If they are not equal, return false indicating that str is not a palindrome.
+Increment start by 1 and decrement end by 1.
+If the loop completes without returning false, str is a palindrome, so return true.
+Define the function checkPalindromeNames that takes a list of strings names as a parameter and does not return a value.
+Iterate over each string name in names, do the following:
+Call the isPalindrome function with name as the argument.
+If the result is true, print "name is a palindrome.".
+If the result is false, print "name is not a palindrome.".
+Define the main function.
+Create a list of strings names and initialize it with some names.
+Call the checkPalindromeNames function with names as the argument.
+End the program.
+
+
++----------------------+
+|     Start Program    |
++----------------------+
+            |
+            v
++------------------------+
+|     Include Headers     |
++------------------------+
+            |
+            v
++------------------------+
+|   Define isPalindrome  |
++------------------------+
+            |
+            v
++------------------------+
+|  Initialize variables  |
+|   start, end           |
++------------------------+
+            |
+            v
++------------------------+
+|     Loop: start < end   |
++------------------------+
+            |
+            v
++------------------------+
+| Check if characters at |
+|    start and end are    |
+|        not equal        |
++------------------------+
+            |
+            v
++------------------------+
+|    Return false         |
++------------------------+
+            |
+            v
++------------------------+
+|   Increment start and   |
+|   decrement end         |
++------------------------+
+            |
+            v
++------------------------+
+|    Return true          |
++------------------------+
+            |
+            v
++------------------------+
+|  Define checkPalindrome |
++------------------------+
+            |
+            v
++------------------------+
+|     Iterate over names  |
++------------------------+
+            |
+            v
++------------------------+
+|   Call isPalindrome    |
+|    for each name       |
++------------------------+
+            |
+            v
++------------------------+
+|   Print palindrome or  |
+|   not palindrome       |
+|    for each name       |
++------------------------+
+            |
+            v
++----------------------+
+|    End Program       |
++----------------------+

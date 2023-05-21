@@ -1,0 +1,112 @@
+Start the program.
+Define the print function to print the elements of a list.
+Define the main function.
+Declare three lists: l1, l2, and l3.
+Add elements 7, 1, and 5 to l1 using the push_back function.
+Add elements 5, 9, and 2 to l2 using the push_back function.
+Initialize variables suml1, suml2, temp1, and temp2 to 0 and 1, respectively.
+Iterate over each element a in l1 using a range-based for loop.
+Multiply a with temp1 and add the result to suml1.
+Multiply temp1 by 10.
+Iterate over each element a in l2 using a range-based for loop.
+Multiply a with temp2 and add the result to suml2.
+Multiply temp2 by 10.
+Calculate the sum of suml1 and suml2 and store it in sum3.
+While sum3 is not equal to 0, do the following:
+Calculate the remainder of sum3 divided by 10 and store it in temp.
+Add temp to l3 using the push_back function.
+Divide sum3 by 10 to remove the rightmost digit.
+Call the print function with l3 as the argument to print the elements of l3.
+End the program.
+
++----------------------+
+|     Start Program    |
++----------------------+
+            |
+            v
++------------------------+
+|     Define Function    |
+|        print()         |
++------------------------+
+            |
+            v
++------------------------+
+|     Define Function    |
+|         main()         |
++------------------------+
+            |
+            v
++------------------------+
+|    Declare variables   |
+|    l1, l2, l3          |
++------------------------+
+            |
+            v
++------------------------+
+|    Add elements to     |
+|     l1 and l2          |
++------------------------+
+            |
+            v
++------------------------+
+|    Initialize variables|
+|    suml1, suml2,       |
+|    temp1, temp2        |
++------------------------+
+            |
+            v
++------------------------+
+|    Loop over elements  |
+|    in l1               |
++------------------------+
+            |
+            v
++------------------------+
+|   Calculate suml1      |
++------------------------+
+            |
+            v
++------------------------+
+|    Loop over elements  |
+|    in l2               |
++------------------------+
+            |
+            v
++------------------------+
+|   Calculate suml2      |
++------------------------+
+            |
+            v
++------------------------+
+|   Calculate sum3       |
++------------------------+
+            |
+            v
++------------------------+
+|    Loop while sum3 != 0|
++------------------------+
+            |
+            v
++------------------------+
+|    Calculate temp       |
++------------------------+
+            |
+            v
++------------------------+
+|    Add temp to l3       |
++------------------------+
+            |
+            v
++------------------------+
+|    Divide sum3 by 10    |
++------------------------+
+            |
+            v
++------------------------+
+|   Print elements of l3  |
++------------------------+
+            |
+            v
++----------------------+
+|    End Program       |
++----------------------+

@@ -1,0 +1,76 @@
+Start the program.
+Include the necessary headers: iostream and list.
+Define the function isCharacterPresent that takes a list of characters charList and a target character targetChar as parameters and returns a boolean value.
+Iterate over each character c in charList, do the following:
+Check if c is equal to targetChar.
+If they are equal, return true indicating that the target character is present.
+If the loop completes without finding a match, return false indicating that the target character is not present.
+Define the main function.
+Create a list of characters charList and initialize it with some characters.
+Declare a target character targetChar.
+Call the isCharacterPresent function with charList and targetChar as arguments.
+If the result is true, print "Character targetChar is present in the list.".
+If the result is false, print "Character targetChar is not present in the list.".
+End the program.
+
+
++----------------------+
+|     Start Program    |
++----------------------+
+            |
+            v
++------------------------+
+|   Include Headers      |
++------------------------+
+            |
+            v
++------------------------+
+|  Define isCharacterPresent |
++------------------------+
+            |
+            v
++------------------------+
+|   Iterate over elements |
++------------------------+
+            |
+            v
++------------------------+
+| Check if character is  |
+|   equal to targetChar   |
++------------------------+
+            |
+            v
++------------------------+
+|      Return true        |
++------------------------+
+            |
+            v
++------------------------+
+|  Return false           |
++------------------------+
+            |
+            v
++------------------------+
+|     Define main         |
++------------------------+
+            |
+            v
++------------------------+
+|   Create charList       |
+|   and targetChar        |
++------------------------+
+            |
+            v
++------------------------+
+|   Call isCharacterPresent|
++------------------------+
+            |
+            v
++------------------------+
+|   Print result message  |
++------------------------+
+            |
+            v
++----------------------+
+|    End Program       |
++----------------------+

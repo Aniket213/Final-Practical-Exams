@@ -1,0 +1,143 @@
+Insertion at the beginning (insertAtBeginning):
+
+Create a new node with the given data.
+If the head is nullptr, set the head to the new node.
+Otherwise, set the next pointer of the new node to the current head.
+Update the head to point to the new node.
+
+
+Insertion at a specific position (insertAtPosition):
+
+Create a new node with the given data.
+If the position is less than or equal to 0, output an error message and return.
+If the position is 1, set the next pointer of the new node to the current head and update the head to point to the new node. Output a success message.
+Traverse the list using curr and prev pointers while keeping track of the current position.
+If the end of the list is reached before the desired position, output an error message and return.
+Insert the new node between prev and curr by setting the next pointer of prev to the new node and the next pointer of the new node to curr. Output a success message.
+
+
+Deletion at a specific position (deleteAtPosition):
+
+If the head is nullptr, output an error message and return.
+If the position is less than or equal to 0, output an error message and return.
+If the position is 1, store the current head in a temporary variable temp, update the head to point to the next node, delete temp, and output a success message.
+Traverse the list using curr and prev pointers while keeping track of the current position.
+If the end of the list is reached before the desired position, output an error message and return.
+Set the next pointer of prev to the node following curr, delete curr, and output a success message.
+
+
+Printing the linked list (print):
+
+If the head is nullptr, output a message indicating that the list is empty.
+Otherwise, initialize a pointer curr to the head.
+While curr is not nullptr, output the data in curr and move curr to the next node.
+Output a new line at the end to separate the output.
+
+
+
++-----------------------+
+|      Start Program    |
++-----------------------+
+            |
+            v
+   +-----------------+
+   | Display Menu    |
+   +-----------------+
+            |
+            v
+   +-----------------+
+   |  Read Choice    |
+   +-----------------+
+            |
+            v
+   +-----------------+
+   |  Perform Action |
+   +-----------------+
+            |
+            v
++-------+  +--------+  +------------+  +--------------+
+| 1     |  | 2      |  | 3          |  | 4            |
+|-------|  |--------|  |------------|  |--------------|
+| Insert|  | Insert |  | Delete     |  | Print        |
+| at    |  | at a   |  | at a       |  | Linked List  |
+| Beginning | Specific| Specific   |                |
++-------+  | Position| Position   |                |
+            +--------+  +------------+                |
+            |         |                               |
+            v         v                               v
+   +-----------------+                        +------------------+
+   | Read Data       |                        | Print Linked List|
+   +-----------------+                        +------------------+
+            |                                        |
+            v                                        v
+   +-----------------+                        +------------------+
+   | Insert at       |                        | Traversal Loop   |
+   | Beginning       |                        | and Print Data   |
+   +-----------------+                        +------------------+
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | Insert at       |                                |
+   | Specific        |                                |
+   | Position        |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | Read Position   |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | Check Position  |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
+   +-----------------+                       +-------------------+
+   | Perform         |                       | Perform           |
+   | Insertion       |                       | Deletion          |
+   +-----------------+                       +-------------------+
+            |                                        |
+            v                                        |
+   +-----------------+                       +-------------------+
+   | Output Result   |                       | Output Result     |
+   +-----------------+                       +-------------------+
+            |                                        |
+            v                                        |
+   +-----------------+                       +-------------------+
+   |  Continue?      |                       | End Program       |
+   +-----------------+                       +-------------------+
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | Read Choice     |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
++------------------------+                             |
+| Check Valid Choice     |                             |
++------------------------+                             |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | Invalid Choice  |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   |  Continue?      |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
++------------------------+                             |
+|  End Program          |                             |
++------------------------+                             |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   |   Print Goodbye  |                                |
+   +-----------------+                                |
+            |                                        |
+            v                                        |
+   +-----------------+                                |
+   | 

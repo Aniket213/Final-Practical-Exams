@@ -1,0 +1,112 @@
+1. Start
+2. Declare and define structures Student, Course, and CGPA to hold relevant information.
+3. Declare and define the findCommonRollNumbers function that takes three std::list containers as parameters: students, courses, and cgpaList.
+    4. Initialize iterators it1, it2, and it3 to the beginning of students, courses, and cgpaList, respectively.
+    5. While it1, it2, and it3 have not reached the end of their respective lists, do:
+        6. If it1->rollNo is equal to it2->rollNo and it1->rollNo is equal to it3->rollNo, then:
+            7. Print "Common Roll Number: " followed by it1->rollNo.
+            8. Increment it1, it2, and it3.
+        9. Otherwise, if it1->rollNo is smaller than it2->rollNo or it1->rollNo is smaller than it3->rollNo, then increment it1.
+        10. Otherwise, if it2->rollNo is smaller than it1->rollNo or it2->rollNo is smaller than it3->rollNo, then increment it2.
+        11. Otherwise, increment it3.
+    12. End loop
+13. End of findCommonRollNumbers function
+14. Define the main function.
+    15. Create std::list containers students, courses, and cgpaList and populate them with sample data.
+    16. Call the findCommonRollNumbers function, passing the three lists as arguments.
+17. End of main function
+18. End
+
+
+  +---------------------+
+  |      Start          |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  | Define Structures   |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |  findCommonRollNumbers |
+  |      function         |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    Initialize       |
+  |    Iterators        |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |   While Loop        |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    Check Roll No.    |
+  |    Equality         |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    Print Common      |
+  |    Roll Number      |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |  Increment Iterators|
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |   Increment it1     |
+  |   if necessary      |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |   Increment it2     |
+  |   if necessary      |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |   Increment it3     |
+  |   if necessary      |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    End While Loop   |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |     End function    |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |      main           |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    Create Lists     |
+  |    and populate    |
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |    Call             |
+  |    findCommonRollNumbers|
+  +---------------------+
+              |
+              V
+  +---------------------+
+  |        End          |
+  +---------------------+
