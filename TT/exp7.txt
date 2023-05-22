@@ -1,0 +1,52 @@
+Create a TrieNode class with an unordered map to store the children nodes and a boolean flag to mark the end of a word.
+Create a Trie class with a root node of type TrieNode.
+Implement the insert operation:
+Start from the root node.
+For each character in the word:
+If the character is not present as a child of the current node, create a new TrieNode and add it as a child.
+Move to the next node.
+Mark the last node as the end of a word.
+Implement the search operation:
+Start from the root node.
+For each character in the word:
+If the character is not present as a child of the current node, return false (word not found).
+Move to the next node.
+Check if the last node is marked as the end of a word. If so, return true (word found).
+Create a Trie object.
+Insert the desired strings into the Trie using the insert operation.
+Perform search operations using the search operation to check if specific strings are present in the Trie.
+
+
+             +---------------------+
+             |     Start Program    |
+             +---------------------+
+                         |
+                         V
+             +---------------------+
+             |   Create TrieNode   |
+             +---------------------+
+                         |
+                         V
+             +---------------------+
+             |    Create Trie     |
+             +---------------------+
+                         |
+                         V
+               +-----------------+
+               |   Insert Word   |
+               +-----------------+
+                         |
+                         V
+             +---------------------+
+             |   Traverse Trie     |
+             +---------------------+
+                         |
+                         V
+          +------------------------+
+          |   Word Found/Not Found |
+          +------------------------+
+                         |
+                         V
+             +---------------------+
+             |    End Program      |
+             +---------------------+

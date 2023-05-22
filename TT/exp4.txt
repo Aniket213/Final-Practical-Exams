@@ -1,0 +1,79 @@
+Define the KMP algorithm function kmp_search that takes the text and pattern strings as input and returns the index of the first occurrence of the pattern in the text (or -1 if not found).
+Initialize variables n and m to hold the lengths of the text and pattern strings, respectively.
+Calculate the prefix function pi for the pattern using the KMP algorithm:
+a. Initialize a vector pi of length m.
+b. Set pi[0] = 0.
+c. Iterate from i = 1 to m-1:
+While k > 0 and pattern[k] is not equal to pattern[i], update k to pi[k-1].
+If pattern[k] is equal to pattern[i], increment k.
+Set pi[i] to k.
+Search for the pattern in the text using the KMP algorithm:
+a. Initialize variable k to 0.
+b. Iterate from i = 0 to n-1:
+While k > 0 and pattern[k] is not equal to text[i], update k to pi[k-1].
+If pattern[k] is equal to text[i], increment k.
+If k is equal to m, the pattern is found at index i-m+1, so return this index.
+If the pattern is not found in the text, return -1.
+Define the kmp_replace function that takes the text, pattern, and new string as input and returns the text string with all occurrences of the pattern replaced by the new string.
+Initialize a string result with the same content as the original text.
+Find the first occurrence of the pattern in the result using the kmp_search function.
+While the pattern is found (i.e., pos is not equal to -1):
+a. Replace the pattern with the new string in the result at the found position (pos) using the replace function.
+b. Find the next occurrence of the pattern in the updated result.
+Return the final result string.
+In the main function:
+a. Get the text, pattern, and new string from the user.
+b. Call the kmp_replace function with the provided inputs.
+c. Print the original text, pattern, new string, and the resulting new text.
+
+              +-------------------+
+              |  Start Program    |
+              +-------------------+
+                          |
+                          V
+          +-----------------------------+
+          |  Read text from user        |
+          +-----------------------------+
+                          |
+                          V
+          +-----------------------------+
+          |  Read pattern from user     |
+          +-----------------------------+
+                          |
+                          V
+          +-----------------------------+
+          |  Read new string from user  |
+          +-----------------------------+
+                          |
+                          V
+        +-------------------------------------+
+        |  Print original text, pattern, and  |
+        |  new string                         |
+        +-------------------------------------+
+                          |
+                          V
+          +-----------------------------+
+          |  Call kmp_replace function  |
+          +-----------------------------+
+                          |
+                          V
+        +-------------------------------------+
+        |  Print new text                     |
+        +-------------------------------------+
+                          |
+                          V
+              +-------------------+
+              |  End Program      |
+              +-------------------+
+
+
+OUTPUT
+
+Enter the text: Hello World! Hello OpenAI!
+Enter the pattern to find: Hello
+Enter the replacement text: Hi
+
+Original text: Hello World! Hello OpenAI!
+Pattern to replace: Hello
+New string: Hi
+New Text: Hi World! Hi OpenAI!

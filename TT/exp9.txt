@@ -1,0 +1,67 @@
+Start with a flag swapped set to false.
+Initialize two pointers, currentNode and lastNode.
+Set lastNode to nullptr.
+Repeat the following steps while swapped is true:
+Set swapped to false.
+Set currentNode to the head of the linked list.
+Iterate through the linked list:
+If the data in currentNode is greater than the data in its next node:
+Swap the data of currentNode and its next node.
+Set swapped to true.
+Move currentNode to the next node.
+Set lastNode to currentNode.
+The linked list is now sorted in ascending order.
+
+
+             +---------------------+
+             |     Start Program    |
+             +---------------------+
+                         |
+                         V
+             +---------------------+
+             |    Create LinkedList|
+             +---------------------+
+                         |
+                         V
+          +----------------------+
+          |   Set swapped = true |
+          +----------------------+
+                         |
+                         V
+  +---------------------------------+
+  | Set currentNode = head         |
+  | Set lastNode = nullptr         |
+  +---------------------------------+
+                         |
+                         V
+           +------------------+
+           |  Iterate List    |
+           +------------------+
+                         |
+                         V
++--------------------------------------------+
+| If currentNode->data > currentNode->next->data |
+| Swap currentNode->data and currentNode->next->data |
+| Set swapped = true                           |
++--------------------------------------------+
+                         |
+                         V
+           +------------------+
+           |  Move currentNode |
+           +------------------+
+                         |
+                         V
++-------------------------------+
+|   Set lastNode = currentNode |
++-------------------------------+
+                         |
+                         V
+         +----------------------+
+         | Check swapped         |
+         | If true, repeat steps|
+         +----------------------+
+                         |
+                         V
+             +---------------------+
+             |    End Program      |
+             +---------------------+

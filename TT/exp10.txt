@@ -1,0 +1,54 @@
+Algorithm: Reverse Arrays while Maintaining Descending Order
+
+Create two stacks, stack1 and stack2.
+Push each element from arr1 into stack1 in the same order.
+Push each element from arr2 into stack2 in the same order.
+Iterate over the size of arr1:
+Pop the top element from stack1 and assign it to arr1[i].
+Pop the top element from stack2 and assign it to arr2[i].
+The arrays arr1 and arr2 are now reversed while maintaining the descending order.
+
+
+             +---------------------+
+             |     Start Program    |
+             +---------------------+
+                         |
+                         V
+             +---------------------+
+             |    Create Stacks     |
+             +---------------------+
+                         |
+                         V
+       +------------------------+
+       |   Push elements from   |
+       |    arr1 into stack1    |
+       +------------------------+
+                         |
+                         V
+       +------------------------+
+       |   Push elements from   |
+       |    arr2 into stack2    |
+       +------------------------+
+                         |
+                         V
+       +-------------------+
+       |  Iterate Arrays   |
+       +-------------------+
+                         |
+                         V
+  +-------------------------------+
+  | Pop element from stack1       |
+  | Assign popped value to arr1[i]|
+  | Pop element from stack2       |
+  | Assign popped value to arr2[i]|
+  +-------------------------------+
+                         |
+                         V
+     +------------------------+
+     | Check end of iteration |
+     +------------------------+
+                         |
+                         V
+             +---------------------+
+             |    End Program      |
+             +---------------------+

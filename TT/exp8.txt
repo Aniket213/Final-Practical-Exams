@@ -1,0 +1,35 @@
+Create an empty std::map called freqMap.
+Iterate through each element num in the input array arr.
+Increment the frequency of num in freqMap by 1.
+Reconstruct the sorted array:
+Initialize an index variable index to 0.
+Iterate through each key-value pair in freqMap.
+For each pair, repeat the following steps pair.second times:
+Set arr[index] to the key (pair.first).
+Increment index by 1.
+The input array arr is now sorted in ascending order.
+
+
+             +---------------------+
+             |     Start Program    |
+             +---------------------+
+                         |
+                         V
+             +---------------------+
+             |    Create Map       |
+             +---------------------+
+                         |
+                         V
+     +------------------------+
+     |   Count Frequencies    |
+     +------------------------+
+                         |
+                         V
+       +-------------------+
+       |  Reconstruct Array |
+       +-------------------+
+                         |
+                         V
+             +---------------------+
+             |    End Program      |
+             +---------------------+
