@@ -1,4 +1,4 @@
-# Network-operating-system
+# Final Practical Exam
 This repository will contain files for final practical exams for 6th semester
 
 * NOS (Network Operating Sysgtem)
